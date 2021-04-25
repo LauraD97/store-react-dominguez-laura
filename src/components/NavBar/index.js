@@ -10,7 +10,6 @@ import product from "../../utils/icons/product.svg";
 import user from "../../utils/icons/user.svg";
 import coin from "../../utils/icons/coin.svg";
 import '../../styles/navBar.css';
-import '../../styles/modal.css';
 
 const NavBar = () => {
   
@@ -42,7 +41,7 @@ const NavBar = () => {
       {showModal && (
         <Modal>
           <div className="modal-container">
-            <div className="modal">
+            <div className="modal-card">
               <button
                 className="modal-close"
                 onClick={() => setShowModal(!showModal)}

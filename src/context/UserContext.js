@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const initialState = {
-    user: '',
-    points: 0
+  name: '',
+  points: 0
 }
 
 export const AppContext = React.createContext();

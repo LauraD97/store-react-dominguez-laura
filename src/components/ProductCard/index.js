@@ -5,7 +5,7 @@ import Modal from "../../utils/modal/modal";
 import buyBlueIcon from "../../utils/icons/blue-bag.svg";
 import buyWHiteIcon from "../../utils/icons/white-bag.svg";
 import coin from "../../utils/icons/coin.svg";
-import '../../styles/modal.css';
+import mess from "../../utils/icons/message.svg";
 
 const ProductCard = ({ _id, name, cost, category, img: { url } }) => {
   const { user, setUser } = useContext(AppContext);
@@ -17,21 +17,20 @@ const ProductCard = ({ _id, name, cost, category, img: { url } }) => {
       data: paths.redeem,
       body: { productId: _id },
     })
-    .then((res) => {
-      setShowModal(true);
-      res.message === 'You have redeem the product successfully'
-        ? setResultMessage(res.message)
-        : setResultMessage("Oh no, something went wrong!");
-  
-        fetchData({ data: paths.profile })
-        .then((result) =>
+      .then((res) => {
+        setShowModal(true);
+        res.message === "You've redeem the product successfully"
+          ? setResultMessage(res.message)
+          : setResultMessage("Oh no, something went wrong!");
+
+        fetchData({ data: paths.profile }).then((result) =>
           setUser(result)
         );
-    })
-    .catch(() => {
-      setShowModal(true);
-      setResultMessage("Oh no, something went wrong!");
-    });
+      })
+      .catch(() => {
+        setShowModal(true);
+        setResultMessage("Oh no, something went wrong!");
+      });
   };
   
   const difference = user.points - cost;
@@ -77,10 +76,10 @@ const ProductCard = ({ _id, name, cost, category, img: { url } }) => {
         </div>
       )}
   
-      { showModal && (
+      {showModal && (
         <Modal setShowModal={setShowModal} showModal={showModal}>
           <div className="modal-container">
-            <div className="modal">
+            <div className="modal-card">
               <button
                 className="modal-close"
                 onClick={() => setShowModal(!showModal)}
@@ -88,6 +87,7 @@ const ProductCard = ({ _id, name, cost, category, img: { url } }) => {
                 x
               </button>
               <div className="modal-confirmation">
+                <img className="modal-icon" src={mess} alt="Coin" />
                 <h1>{resultMessage}</h1>
               </div>
             </div>

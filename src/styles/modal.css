@@ -8,28 +8,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
-    
+    padding: 50px 20px;    
+  }
+
+  .modal-profile {
+    width: 100%;
   }
   
-  .modal {
+  .modal-card {
     height: fit-content;
-    min-height: 50%;
-    min-width: 40%;
-    background-color: #ffffff;
+    min-width: 45%;    
     position: relative;
     border: 5px;
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-      Helvetica Neue, sans-serif;
-    font-size: 14px;
-    line-height: 1.43;
-    color: #484848;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
+    color: #616161;
+    box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px;
   }
   
   .modal-close {
@@ -39,4 +37,22 @@
     cursor: pointer;
     border: none;
     font-size: 20px;
+  }
+
+  .modal-confirmation {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .modal-confirmation h1 {
+    color: #616161;
+    font-size: 1.6em;
+    margin-bottom: 0px !important;
+    margin-right: .5em;
+  }
+
+  .modal-icon {
+    width: 3em;
+    margin-right: .5em;
   }
