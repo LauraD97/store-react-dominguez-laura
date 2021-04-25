@@ -1,0 +1,9 @@
+.grid {
+  padding: 3rem;
+  padding-top: 0mm;
+  margin-top: 1.5em;
+  display: grid;    
+  grid-gap: 1.9em;
+  justify-content: center;
+  grid-template-columns: 20% 20% 20% 20%;
+}

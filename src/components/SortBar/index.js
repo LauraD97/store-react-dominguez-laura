@@ -12,12 +12,13 @@ const SortBar = ({ setSortBy, jump }) => {
   };
 
   return(
-    <div className="">
-      <p>Sort by: </p>
+    <div className="col-md-4 sort-bar">
+      <p className="margin-p">Sort by:</p>
+      
       { Object.entries(sortOptions).map((element) => (
         <button
           key={element[1]}
-          className={active === element[1] ? "btn-active" : "btn"}
+          className={active === element[1] ? "button-active" : "button"}
           onClick={() => handleSort(element[1])}
         >
           {element[1]}

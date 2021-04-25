@@ -36,8 +36,8 @@ const Products = ({ info: { id }, render }) => {
   );
 
   return (
-    <div className="">
-      <div className="">
+    <div className="col-md-12 np">
+      <div className="col-md-12 np f">
         <SortBar setSortBy={setSortBy} jump={jump} />
         <FilterBar
           products={products}
@@ -54,15 +54,10 @@ const Products = ({ info: { id }, render }) => {
         />
       </div>
 
-      <div className="">
+      <div className="col-md-12 grid">
         {currentData().map((element) => (
           <Fragment key={Math.random()}>{render({ ...element })}</Fragment>
         ))}
-      </div>
-      <div
-        className="menu"
-        style={{ justifyContent: "right", paddingRight: "10%" }}
-      >
       </div>
     </div>
   );

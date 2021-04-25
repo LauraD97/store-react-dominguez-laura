@@ -5,7 +5,8 @@ import Modal from "../../utils/modal/modal";
 import buyBlueIcon from "../../utils/icons/blue-bag.svg";
 import buyWHiteIcon from "../../utils/icons/white-bag.svg";
 import coin from "../../utils/icons/coin.svg";
-import '../../styles/products.css';
+import '../../styles/card.css';
+import '../../styles/modal.css';
 
 const ProductCard = ({ _id, name, cost, category, img: { url } }) => {
   const { user, setUser } = useContext(AppContext);
@@ -37,40 +38,40 @@ const ProductCard = ({ _id, name, cost, category, img: { url } }) => {
   const difference = user.points - cost;
 
   return (
-    <div className="">
+    <div className="card">
       { (difference > 0) ? 
-        ( <img className="" src={ buyBlueIcon } alt="Buy Icon"></img> )
+        ( <img className="icon buy-icon-size" src={ buyBlueIcon } alt="Buy Icon"></img> )
         : (
-            <div className="">
-              <div className="">
+            <div className="icon">
+              <div className="need">
                 <p> You need { -difference }</p>
-                <img src={coin} alt="Coin" />
+                <img className="icon-size" src={coin} alt="Coin" />
               </div>
             </div>
           )
       }
       
-      <img className="" src={ url } alt="Product"></img>
+      <img className="product" src={ url } alt="Product"></img>
   
-      <div className="">
-        <div className=""></div>
+      <div className="info">
+        <div className="line"></div>
         <p>{category}</p>
         <h3>{name}</h3>
-        <div className="">
-          <img src={coin} alt="Coin" />
+        <div className="points">
+          <img className="coin-icon-size" src={coin} alt="Coin" />
           <p>{cost}</p>
         </div>
       </div>
   
       { (difference > 0) && (
-        <div className="">
-          <img className="" src={ buyWHiteIcon } alt="Buy Icon"></img>
-          <div className="">
-            <div className="">
+        <div className="card-hover">
+          <img className="icon buy-icon-size" src={ buyWHiteIcon } alt="Buy Icon"></img>
+          <div className="buy-info">
+            <div className="redeem-points">
               <p>{cost}</p>
-              <img src={coin} alt="Coin" />
+              <img className="coin-icon-size" src={coin} alt="Coin" />
             </div>
-            <button className="btn btn-add" onClick={() => handleRedeem()}>
+            <button onClick={() => handleRedeem()}>
               Redeem now
             </button>
           </div>
@@ -79,15 +80,15 @@ const ProductCard = ({ _id, name, cost, category, img: { url } }) => {
   
       { showModal && (
         <Modal setShowModal={setShowModal} showModal={showModal}>
-          <div className="">
+          <div className="modal-container">
             <div className="modal">
               <button
-                className=""
+                className="modal-close"
                 onClick={() => setShowModal(!showModal)}
               >
                 x
               </button>
-              <div className="">
+              <div className="modal-confirmation">
                 <h1>{resultMessage}</h1>
               </div>
             </div>
