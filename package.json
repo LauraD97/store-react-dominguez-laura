@@ -2,7 +2,7 @@
   "name": "store-dominguez-laura",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://LauraD97.github.io/store-react-dominguez-laura",
+  "homepage": "https://LauraD97.github.io/store-react-dominguez-laura",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
