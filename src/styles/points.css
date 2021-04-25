@@ -1,0 +1,83 @@
+.points-container {
+  display: unset;
+  flex-direction: inherit;
+  align-items: center;  
+}
+
+.points-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: .4em;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: .8em;
+  justify-content: space-around;
+}
+
+.points-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: .6em;
+  text-align: center; 
+  height: 2.2em !important;
+  max-width: 30% !important; 
+}
+
+.button {  
+  background: #d4cbcb;
+}
+
+.button:hover{
+  background-color: #0faab2;
+  color: #ffffff;
+}
+
+.button-active {  
+  background: #0faab2;
+  color: #ffffff;
+}
+
+.coin-icon {
+  width: 1.8em;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.add-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.add-container button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: .6em;
+  height: 2.3em !important;
+  padding: 0px 32px;
+  background-color: #616161;
+  color: #ffffff;
+}
+
+.add-container button:hover {
+  background-color: #f6c4cd;
+  color: #212529;
+  font-weight: bolder;
+}
+
+.add-container h3 {
+  font-size: 1.2em;
+  color: #616161;
+  margin: 0px;
+}
+
+p {
+  margin: none !important;
+}

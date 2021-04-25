@@ -5,7 +5,6 @@ import Modal from "../../utils/modal/modal";
 import buyBlueIcon from "../../utils/icons/blue-bag.svg";
 import buyWHiteIcon from "../../utils/icons/white-bag.svg";
 import coin from "../../utils/icons/coin.svg";
-import '../../styles/card.css';
 import '../../styles/modal.css';
 
 const ProductCard = ({ _id, name, cost, category, img: { url } }) => {

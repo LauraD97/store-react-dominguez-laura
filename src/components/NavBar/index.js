@@ -25,7 +25,7 @@ const NavBar = () => {
       <ul className="col-md-4 offset-md-1 links">
         <li>
           <img className="info-icon" src={shop} alt="Logo" />
-          <Link className="link" to="/store-react-dominguez-laura/profile">
+          <Link className="link" to="/store-react-dominguez-laura/history">
             Shopping history
           </Link>
         </li>

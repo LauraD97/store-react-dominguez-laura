@@ -153,3 +153,59 @@
 p {
   margin-bottom: 0px !important;
 }
+
+/**** History Card *****/
+.history-card{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  border: none !important;
+  border-radius: 1em !important;
+  transition: 0.2s;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);  
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+  background: url(../utils/images/card-background.png) no-repeat fixed center;
+}
+
+.history-card img {
+  width: 35%;
+  height: 75%;
+}
+
+.info-container {
+  margin: .5em 0em;
+  text-align: left;
+  padding-left: .5em;
+}
+
+.info-container p {
+  font-size: .9em;
+  color: #616161;
+  margin-bottom: .5em !important;
+}
+
+.info-container h3 {
+  font-size: 1.1em;
+  margin-bottom: .5em !important;
+  
+}
+
+.card-points {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-points img {
+  width: 1.6em;
+  padding-right: 3%;
+}
+
+.card-points p {
+  font-size: .9em;
+  color: #616161;
+  margin: 0px !important;
+}

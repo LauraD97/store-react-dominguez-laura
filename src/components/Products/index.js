@@ -4,7 +4,6 @@ import SortBar from "../SortBar/index";
 import FilterBar from "../FilterBar/index";
 import usePagination from "../../utils/scripts/usePagination";
 import Pagination from "../Pagination/index";
-import '../../styles/products.css';
 
 const Products = ({ info: { id }, render }) => {
   const [products, setProducts] = useState([]);
@@ -27,7 +26,7 @@ const Products = ({ info: { id }, render }) => {
          element.cost <= parseInt(priceFilter.split("-")[1])))
     )
     .sort((a, b) =>
-      sortBy === sortOptions.lowPrice ? a.cost - b.cost : b.cost - a.cost
+      sortBy === sortOptions.lowest ? a.cost - b.cost : b.cost - a.cost
     );
 
   const { next, prev, jump, currentData, currentPage, maxPage } = usePagination(
@@ -54,7 +53,7 @@ const Products = ({ info: { id }, render }) => {
         />
       </div>
 
-      <div className="col-md-12 grid">
+      <div className="col-md-12 grid np">
         {currentData().map((element) => (
           <Fragment key={Math.random()}>{render({ ...element })}</Fragment>
         ))}

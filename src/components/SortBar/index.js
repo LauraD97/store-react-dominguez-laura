@@ -18,7 +18,7 @@ const SortBar = ({ setSortBy, jump }) => {
       { Object.entries(sortOptions).map((element) => (
         <button
           key={element[1]}
-          className={active === element[1] ? "button-active" : "button"}
+          className={(active === element[1]) ? "button-active" : "button"}
           onClick={() => handleSort(element[1])}
         >
           {element[1]}

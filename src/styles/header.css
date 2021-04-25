@@ -23,6 +23,11 @@
 }
 
 .bar {
-  height: .5em;
+  height: .4em;
+  background-color: #0FABB2;
+}
+
+.bar2 {
+  height: .2em;
   background-color: #0FABB2;
 }
