@@ -34,5 +34,5 @@ npm start
 - Git  
 
 ## Author: 👩‍💼
-Laura Domínguez <laura.dominguez@globant.com>  
+Laura Domínguez  
 Front End Avanzado en React, 2020
