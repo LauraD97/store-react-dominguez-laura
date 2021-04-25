@@ -3,7 +3,7 @@
 ## About: 📖
 Catalog view for an e-commerce application that allows users to exchange points for products by consuming the [aerolab API](https://aerolabchallenge.docs.apiary.io/#reference).  
 
-**Project:** https://LauraD97.github.io/store-react-dominguez-laura
+**Project:** http://LauraD97.github.io/store-react-dominguez-laura
 
 ## Set up the project ⚙️
 Git:
