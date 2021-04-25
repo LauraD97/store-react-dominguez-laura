@@ -1,0 +1,69 @@
+.nav-container {
+  margin: 1% 0%;
+  display: flex;
+  align-items: center;  
+}
+
+.logo {
+  width: 9em;
+}
+
+.nav-icon {
+  width: 2.5em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0px;
+  margin-right: 0px !important;
+}
+
+.links li {
+  list-style-type: none;
+}
+
+.link {
+  color: #484848;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: 0.2s all;
+  margin-left: .5em;
+}
+
+.link:hover {
+  color: #0faab2;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 0px !important;
+}
+
+.user-info p {
+  margin-left: .6em;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.user-points {
+  margin-left: 1em;
+  display: flex;
+  padding: .3em;
+  border: none;
+  border-radius: .8em;
+  background-color: rgba(212, 203, 203, 0.7);
+}
+
+.user-points p {
+  font-size: 1.2em;
+}
+
+.info-icon {
+  width: 2em;
+}

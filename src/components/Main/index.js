@@ -9,7 +9,7 @@ const Main = () => {
     <Switch>
       <Route
         exact
-        path=""
+        path="/store-react-dominguez-laura/"
         render={() => {
           return (
             <Products

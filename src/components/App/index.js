@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from '../NavBar/index';
 import Header from '../Header/index';
 import Main from '../Main/index';
 import UserProvider from '../../context/UserContext';
@@ -9,6 +10,7 @@ function App() {
   return(
     <div className="container">
       <UserProvider>
+        <NavBar/>
         <Header/>
         <Main/>
       </UserProvider>

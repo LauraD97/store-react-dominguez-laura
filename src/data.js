@@ -61,7 +61,7 @@ export const filters = {
     }
 }
   
-export const pointOptions = [
+export const pointsOptions = [
     1000, 5000, 7500
 ]
 
