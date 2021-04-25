@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/store-react-dominguez-laura/static/css/main.af0edae6.chunk.css",
+    "main.js": "/store-react-dominguez-laura/static/js/main.7752fcec.chunk.js",
+    "main.js.map": "/store-react-dominguez-laura/static/js/main.7752fcec.chunk.js.map",
+    "runtime-main.js": "/store-react-dominguez-laura/static/js/runtime-main.44c55a10.js",
+    "runtime-main.js.map": "/store-react-dominguez-laura/static/js/runtime-main.44c55a10.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/store-react-dominguez-laura/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.01c7ae87.chunk.js": "/store-react-dominguez-laura/static/js/2.01c7ae87.chunk.js",
+    "static/js/2.01c7ae87.chunk.js.map": "/store-react-dominguez-laura/static/js/2.01c7ae87.chunk.js.map",
+    "index.html": "/store-react-dominguez-laura/index.html",
+    "precache-manifest.25f58c573a9c61f6243c05df44b5d63d.js": "/store-react-dominguez-laura/precache-manifest.25f58c573a9c61f6243c05df44b5d63d.js",
+    "service-worker.js": "/store-react-dominguez-laura/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/store-react-dominguez-laura/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.af0edae6.chunk.css.map": "/store-react-dominguez-laura/static/css/main.af0edae6.chunk.css.map",
+    "static/js/2.01c7ae87.chunk.js.LICENSE.txt": "/store-react-dominguez-laura/static/js/2.01c7ae87.chunk.js.LICENSE.txt",
+    "static/media/aerolab_logo.png": "/store-react-dominguez-laura/static/media/aerolab_logo.452e765c.png",
+    "static/media/blue-bag.svg": "/store-react-dominguez-laura/static/media/blue-bag.38f00962.svg",
+    "static/media/card.css": "/store-react-dominguez-laura/static/media/card-background.5d25161b.png",
+    "static/media/coin.svg": "/store-react-dominguez-laura/static/media/coin.3ed58189.svg",
+    "static/media/cover.png": "/store-react-dominguez-laura/static/media/cover.56df08e2.png",
+    "static/media/first.svg": "/store-react-dominguez-laura/static/media/first.3af2b989.svg",
+    "static/media/last.svg": "/store-react-dominguez-laura/static/media/last.73cee714.svg",
+    "static/media/message.svg": "/store-react-dominguez-laura/static/media/message.9734d752.svg",
+    "static/media/next.svg": "/store-react-dominguez-laura/static/media/next.4965e3e4.svg",
+    "static/media/previous.svg": "/store-react-dominguez-laura/static/media/previous.5864da1d.svg",
+    "static/media/product.svg": "/store-react-dominguez-laura/static/media/product.55b31083.svg",
+    "static/media/shopping.svg": "/store-react-dominguez-laura/static/media/shopping.c859a6de.svg",
+    "static/media/user.svg": "/store-react-dominguez-laura/static/media/user.b0e62303.svg",
+    "static/media/white-bag.svg": "/store-react-dominguez-laura/static/media/white-bag.9133482b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44c55a10.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.01c7ae87.chunk.js",
+    "static/css/main.af0edae6.chunk.css",
+    "static/js/main.7752fcec.chunk.js"
+  ]
+}
